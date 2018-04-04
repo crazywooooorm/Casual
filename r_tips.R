@@ -1,15 +1,15 @@
 # Update anytime, be simple, be quick.
-# == ggplot part
+# == ggplot
 # -- a typical line plot
 data %>% 
   ggplot(aes(x = year, y = pct, colour = `Ethnicity Groups`)) +
   geom_point(size = 1.4) +
-  # -- only have lines on part of the data 
+  # only have lines on part of the data 
   geom_line(aes(x = year, y = pct, 
                 group = interaction(`Ethnicity Groups`, 
                                     (year == 2006), 
                                     (year == 2009))), size = 0.8) +
-  # -- cut the plot
+  # cut the plot
   coord_cartesian(ylim = c(0, 0.1)) +
   scale_x_continuous(name = "Year", 
                      breaks = unique(flavor_race_data$year)) +
@@ -18,11 +18,21 @@ data %>%
   scale_color_manual(breaks = c("type1", "type2", "type3"),
                      values=c("#1f78b4", "#e31a1c", "#e6ab02")) +
   theme_classic() +
-  # -- lab manipulation
+  # lab manipulation
   theme(axis.text.x = element_text(angle = 45, vjust = .5),
         legend.position = "none") +
   scale_fill_discrete(guide = FALSE) +
   labs(title = "") 
+
+
+# == Functions
+# -- sapply usage and usage of `[`
+tt <- list(1:3, 4:9, 10:12)
+sapply(tt, `[`, 2)
+
+# -- calling function with args
+do.call(mean, list(1:10, na.rm = T))
+
 
 
 # == regex
