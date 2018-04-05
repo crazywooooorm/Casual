@@ -33,6 +33,9 @@ sapply(tt, `[`, 2)
 # -- calling function with args
 do.call(mean, list(1:10, na.rm = T))
 
+# -- use of "{", coerce a function, but can't take group_by 
+data.frame(a = rep(c("x", "y"), 10), b = 1:20, c = rep(1:5, 4)) %>% 
+  {t.test(.$b, .$c)}
 
 
 # == regex
