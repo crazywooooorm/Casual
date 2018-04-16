@@ -47,7 +47,27 @@ tidyr::extract(var, c("day", "question"), "(D[0-9]+)(Q.+)?")
 tidyr::extract(var, c("var", "category", "question_num"),
                "(.*)_(Pattern1|Pattern2)(\\d+)?")
 
+# == I/O
+# -- build database with RSQLite
+con <- DBI::dbConnect(RSQLite::SQLite(), "Path")
 
+eg_data <- read.table(...)
+
+dplyr::copy_to(con, eg_data, "eg_data", 
+        overwrite = TRUE, append = TRUE,
+        temporary = FALSE)
+
+DBI::dbDisconnect(con)
+
+# -- get data from database
+con <- DBI::dbConnect(RSQLite::SQLite(), "Path")
+
+dplyr::db_list_tables(con)
+
+target_data <- dplyr::tbl(con, "eg_data") %>% 
+  dplyr::filter() %>% 
+  dplyr::select() %>%
+  collect()
 
 
 
