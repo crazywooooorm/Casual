@@ -25,6 +25,9 @@ data %>%
   labs(title = "") 
 
 
+
+
+
 # == Functions
 # -- sapply usage and usage of `[`
 tt <- list(1:3, 4:9, 10:12)
@@ -38,6 +41,13 @@ data.frame(a = rep(c("x", "y"), 10), b = 1:20, c = rep(1:5, 4)) %>%
   {t.test(.$b, .$c)}
 
 
+
+# -- convert string to quosure
+dplyr::select(mtcars, !!rlang::sym("mpg"))
+dplyr::select(mtcars, !!!rlang::syms(c("mpg", "disp")))
+
+
+
 # == regex
 # -- extract all numbers from string
 stringr::str_extract(target_string, "\\-*\\d+\\.*\\d*")
@@ -46,6 +56,10 @@ stringr::str_extract(target_string, "\\-*\\d+\\.*\\d*")
 tidyr::extract(var, c("day", "question"), "(D[0-9]+)(Q.+)?")
 tidyr::extract(var, c("var", "category", "question_num"),
                "(.*)_(Pattern1|Pattern2)(\\d+)?")
+
+
+
+
 
 # == I/O
 # -- build database with RSQLite
