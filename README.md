@@ -1,7 +1,7 @@
 # Casual
-Repo to record funny stuff
-Pick up your academic experience or explore interesting things
+见贤思齐焉，见不贤而内自省也。
 
-Links might useful:
-http://efinance.org.cn/cn/FEshuo/stochastic.pdf
+Life is distributed randomly. knowledge is infinite. Recorde as much as I can. Build the structure from chaos.
+
+This repo stores all the casual stuff. I will try to list all the points here. 
 
