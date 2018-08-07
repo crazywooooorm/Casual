@@ -17,3 +17,6 @@ Finished most of the python basic train. Basically we did some practice on data 
 
 #### 07/29/18
 Finished the Searching and Sorting part in Algorithms & Data Structures. Quick Sort and Merge Sort are the most complicated algorithms for me, but also have a higher efficiency than other sorting algorithms.
+
+#### 08/07/18
+Still have search tree part left in tree structure. The reason I stopped is that I feel too much data structure practice only increase the knowledge rather than the true algorithm insights. I think more practice on algorithms is necessary, so in next period I shall focus more on the algorithm practice. 
