@@ -21,5 +21,5 @@ Finished the Searching and Sorting part in Algorithms & Data Structures. Quick S
 #### 08/07/18
 Still have search tree part left in tree structure. The reason I stopped is that I feel too much data structure practice only increase the knowledge rather than the true algorithm insights. I think more practice on algorithms is necessary, so in next period I shall focus more on the algorithm practice.
 
-### 08/30/18
+#### 08/30/18
 The algorithm practice took more time than I expected. Just finished the Divide & Conquer. Greedy algorithm is easy to catch, but when implementing a Divide & Conquer algorithm we need to be really careful on the recursion control. Don't mess up if and while; and always make it clear the division happens on the target list or only on the index.
