@@ -24,7 +24,7 @@ Still have search tree part left in tree structure. The reason I stopped is that
 #### 08/30/18
 The algorithm practice took more time than I expected. Just finished the Divide & Conquer. Greedy algorithm is easy to catch, but when implementing a Divide & Conquer algorithm we need to be really careful on the recursion control. Don't mess up if and while; and always make it clear the division happens on the target list or only on the index.
 
-### 09/10/18
-Finished the whole algorithm toolbox. Last chapter Dynamic Programming is the most difficult chapter. To implement a dynamic programming algorithm, firstly, figure out what can be split and in each step what operations can be done. Then start loop from the smallest subgroup and use something to store those results. 
+#### 09/10/18
+Finished the whole algorithm toolbox. Last chapter Dynamic Programming is the most difficult chapter. To implement a dynamic programming algorithm, firstly, figure out what can be split and in each step what operations can be done. Then start loop from the smallest subgroup and use something to store those results.
 
 Next, we might do some practice on data structures.
