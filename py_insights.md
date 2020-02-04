@@ -20,4 +20,7 @@
 
 # Pandas
 * Difference between Pandas Series and Numpy array is that you can specify index in Pandas Series, and Pandas Series support more data types (e.g. list of functions).
-  
+* Many methods in Pandas DataFrame has 'inplace' attribute, if you want the changes happen on the original DataFrame, you need to change inplace from False (default) to True.
+* 'and' is logical, '&' is bitwise. So 'and' is used to deal with two booleans, '&' is used if you want to take the intersection of two set.
+* describe() is a useful method for DataFrame to get summary statistics, it would be also useful to use groupby() and describe() together to get group summary.
+* pd.concat() concats DataFrames by row or column; pd.merge() joins tables on columns, default is inner join; join() method joins tables on index, default is left join.
