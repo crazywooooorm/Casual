@@ -24,3 +24,19 @@
 * 'and' is logical, '&' is bitwise. So 'and' is used to deal with two booleans, '&' is used if you want to take the intersection of two set.
 * describe() is a useful method for DataFrame to get summary statistics, it would be also useful to use groupby() and describe() together to get group summary.
 * pd.concat() concats DataFrames by row or column; pd.merge() joins tables on columns, default is inner join; join() method joins tables on index, default is left join.
+
+# Matplotlib
+* Never forget to put '%matplotlib inline' on the top if you want to show the plot immediately in notebook, if not, you need plt.show().
+* Treat matplotlib figure as an object (creating by plt.figure()), then each plot within that figure is an axes (fig.add_axes(), args in this method specifies the plot position).
+* To manage couple plots in one figure, use 'fig, axes = plt.subplots(nrows, ncols)'. In this case axes is an array of axe, so you need to fill the plot content to axes iteratively or one by one.
+
+# Seaborn
+* Seaborn is library for making statistical graphics on top of matplotlib, the basic graphic it covers are:
+  * histogram: sns.distplot()
+  * correlation plot: sns.jointplot()
+  * summary plot (correlations of all numeric columns in df): sns.pairplot()
+  * kernel density estimation plot: sns.kdeplot()
+  * bar plot: sns.barplot()
+  * count plot for categorical: sns.countplot()
+  * box plot: sns.boxplot()
+  
