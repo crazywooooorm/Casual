@@ -16,4 +16,6 @@
   * Quick sort: pick one element as pivot, traverse the rest elements, swap the elements based on whether bigger or smaller than pivot. Divide and conquer the same process until basic elements. Time complexity is on average O(nlogn), but in worst case (pivot is always the extreme element, e.g. sorted list) it can be O(n^2). Typically we do 2-way quick sort, but 3-way (elements equal to pivot will be a separate group) quick sort will be more efficient when our list has many non-unique elements.
   * Counting sort: A sort method works for the situation when there are not many unique elements and you already know the sort of those unique elements. If the range of elements is 0 to k and you have n elements, the complexity is O(n+k).
 
-     
+# Dynamic Programming
+* In many cases, greedy algorithms can lead us to the global optimization. Dynamic programming considers all the situations to make sure we got the optimal result.
+* The idea behind dynamic programming is, instead of using recursion, we store all the results of each status, so we avoid the exponential complexity of recursion. The time complexity of dynamic programming depends on the number of status.    
