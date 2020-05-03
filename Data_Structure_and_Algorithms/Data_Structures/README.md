@@ -7,3 +7,6 @@
   * PopBack: O(n) without tail pointer; still O(n) if we have tail pointer, as we don't know the second last node (pointer is one direction) unless we start from the head.
 * Stack: LIFO (last in first out).
 * Queue: FIFO (first in first out). Notice if we want to have O(1) for both push and pop, we need two pointers to point both head and tail because the places to push and pop are different (not like stack).
+* Tree traversal:
+  * DFS (depth-first): in-order (left, node, right), pre-order (node, left, right), post-order (left, right, node)
+  * BFS (breadth-first)
