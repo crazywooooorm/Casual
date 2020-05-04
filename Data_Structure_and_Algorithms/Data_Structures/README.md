@@ -10,3 +10,15 @@
 * Tree traversal:
   * DFS (depth-first): in-order (left, node, right), pre-order (node, left, right), post-order (left, right, node)
   * BFS (breadth-first)
+
+# Dynamic Arrays and Amortized Analysis
+* Not like static array, dynamic arrays can be resized. List in python is dynamic array.
+* Although dynamic array can be resized, the capacity and the actual size might be different, so some space is wasted.
+* For different actions in dynamic array:
+  * push, pop, set: O(1)
+  * PushBack: when there is capacity then it's O(1), but when we need more capacity, we create a new array with more space, then copy the old elements and paste into new array, this process is O(n)
+  * Remove: when we remove an element, all the elements after that needs to be assigned a new index, this process can be O(n)
+
+# Priority Queues and Disjoint Sets
+* Binary max heap is a binary tree where value of each node is at least the values of its children.
+* Complete binary tree is defined as a binary tree with all levels filled except possibly the last one which is filled from left to right. The height of binary tree is most O(logn), which minimizes the complexity for a given number of elements.
