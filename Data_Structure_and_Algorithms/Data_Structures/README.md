@@ -22,3 +22,9 @@
 # Priority Queues and Disjoint Sets
 * Binary max heap is a binary tree where value of each node is at least the values of its children.
 * Complete binary tree is defined as a binary tree with all levels filled except possibly the last one which is filled from left to right. The height of binary tree is most O(logn), which minimizes the complexity for a given number of elements.
+* How does heap sort work?
+  * First, create the binary max heap, time complexity is O(n)
+  * Second, pop the root of the heap (biggest element)
+  * Third, update the heap with SiftDown after removing the root, time complexity is O(logn)
+  * Repeat Second and Third, it takes O(nlogn) in total
+* Disjoint set is a data structure tracks a set of elements partitioned into a number of disjoint subsets. The basic operations include Find (find the belong set of an element) and Merge (merge two disjoint sets).
